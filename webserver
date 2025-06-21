@@ -1,33 +1,16 @@
-from flask import Flask, jsonify
+# webserver.py
+from flask import Flask
 from threading import Thread
-import os
-import time
 
-app = Flask(__name__)
-
-# Contador de tiempo de actividad
-start_time = time.time()
+app = Flask('')
 
 @app.route('/')
 def home():
-    """Endpoint principal para UptimeRobot"""
-    return jsonify({
-        "status": "online",
-        "uptime": time.time() - start_time,
-        "message": "🟢 Bot de Discord está en línea!"
-    }), 200
-
-@app.route('/health')
-def health_check():
-    """Endpoint adicional para verificaciones de salud"""
-    return jsonify({"status": "healthy"}), 200
+    return "Bot activo"
 
 def run():
-    port = int(os.environ.get('PORT', 8080))
-    app.run(host='0.0.0.0', port=port)
+    app.run(host='0.0.0.0', port=8080)
 
 def keep_alive():
-    """Inicia el servidor web en segundo plano"""
-    server = Thread(target=run)
-    server.daemon = True  # Se cerrará cuando el proceso principal termine
-    server.start()
+    t = Thread(target=run)
+    t.start()
