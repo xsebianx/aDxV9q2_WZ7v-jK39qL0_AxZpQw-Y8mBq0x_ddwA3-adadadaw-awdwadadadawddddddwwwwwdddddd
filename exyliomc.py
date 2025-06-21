@@ -5,7 +5,6 @@ import asyncio
 import datetime
 from dotenv import load_dotenv
 import os
-from webserver import keep_alive
 import random
 import io
 import html
@@ -16,6 +15,8 @@ import glob
 import sqlite3
 import zlib
 import tracemalloc
+from flask import Flask  # Nuevas importaciones añadidas
+from threading import Thread
 
 # Iniciar monitoreo de memoria
 tracemalloc.start()
