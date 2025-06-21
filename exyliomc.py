@@ -35,10 +35,12 @@ CATEGORIA_TICKETS = "🎫 TICKETS"
 ROLES_STAFF = []
 ESTADOS_TICKET = ["🟡 Pendiente", "🟢 Resuelto", "🔴 Necesita respuesta", "🔒 Archivado"]
 
-# Archivos de almacenamiento
-TICKETS_FILE = "tickets.json"
-STAFF_ROLES_FILE = "staff_roles.json"
-CONFIG_FILE = "config.json"
+# Archivos de almacenamiento (en volumen persistente)
+BASE_PATH = "/data"
+TICKETS_FILE = f"{BASE_PATH}/tickets.json"
+STAFF_ROLES_FILE = f"{BASE_PATH}/staff_roles.json"
+CONFIG_FILE = f"{BASE_PATH}/config.json"
+ATTACHMENTS_BASE = f"{BASE_PATH}/ticket_attachments"
 
 # Variable global para el canal de logs
 CANAL_LOGS_OBJ = None
