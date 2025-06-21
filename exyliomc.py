@@ -1413,7 +1413,7 @@ async def on_app_command_error(interaction: discord.Interaction, error):
             except:
                 print("⚠️ No se pudo registrar el error en el canal de logs")
             
-keep_alive()
+load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 if TOKEN:
     bot.run(TOKEN)
