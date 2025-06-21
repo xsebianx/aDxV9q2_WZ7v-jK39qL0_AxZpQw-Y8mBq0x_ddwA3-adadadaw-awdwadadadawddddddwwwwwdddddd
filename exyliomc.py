@@ -5,6 +5,7 @@ import asyncio
 import datetime
 from dotenv import load_dotenv
 import os
+import webserver
 import random
 import io
 import html
@@ -15,7 +16,6 @@ import glob
 import sqlite3
 import zlib
 import tracemalloc
-from flask import Flask
 from threading import Thread
 
 # Iniciar monitoreo de memoria
@@ -1412,9 +1412,8 @@ async def on_app_command_error(interaction: discord.Interaction, error):
                 await CANAL_LOGS_OBJ.send(embed=error_embed)
             except:
                 print("⚠️ No se pudo registrar el error en el canal de logs")
-
+            
 keep_alive()
-
 TOKEN = os.getenv('DISCORD_TOKEN')
 if TOKEN:
     bot.run(TOKEN)

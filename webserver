@@ -1,12 +1,13 @@
-app = Flask('')
+from flask import Flask
+from threading import Thread
 
-@app.route('/')
+app = Flask(__name__)
+
+@app.route('/')  # Ruta principal
 def home():
-    return "Bot activo"
+    return "🟢 Bot ExilioMC está en línea!"  # Mensaje que verás al entrar al link
 
 def run():
-    app.run(host='0.0.0.0', port=8080)
+    app.run(host='0.0.0.0', port=10000)  # Render usa automáticamente el puerto 10000
 
-def keep_alive():
-    t = Thread(target=run)
-    t.start()
+Thread(target=run).start()  # Inicia Flask en segundo plano
