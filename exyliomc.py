@@ -17,6 +17,20 @@ import sqlite3
 import zlib
 import tracemalloc
 
+def test_sqlite():
+    conn = sqlite3.connect(':memory:')
+    cursor = conn.cursor()
+    cursor.execute("CREATE TABLE test (id INTEGER PRIMARY KEY, name TEXT)")
+    cursor.execute("INSERT INTO test (name) VALUES ('Render Test')")
+    conn.commit()
+    cursor.execute("SELECT * FROM test")
+    result = cursor.fetchone()
+    conn.close()
+    return result
+
+# En on_ready
+print(f"✅ SQLite test: {test_sqlite()}")
+
 # Iniciar monitoreo de memoria
 tracemalloc.start()
 
