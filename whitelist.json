@@ -1,0 +1,13 @@
+{
+  "126AB644-BF9A-4F45-A876-C6E56F1F9526": {
+    "username": "Drakath",
+    "type": "permanent",
+    "reason": "Acceso Permanente - Creador"
+  },
+  "xyz-789-uvw-012": {
+    "username": "UsuarioVIP",
+    "type": "temporary",
+    "expiry": "2024-08-22T00:00:00Z",
+    "reason": "Acceso de prueba por 7 días"
+  }
+}
