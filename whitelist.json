@@ -1,13 +1,12 @@
 {
-  "126AB644-BF9A-4F45-A876-C6E56F1F9526": {
-    "username": "Drakath",
-    "type": "permanent",
-    "reason": "Acceso Permanente - Creador"
-  },
-  "xyz-789-uvw-012": {
-    "username": "UsuarioVIP",
-    "type": "temporary",
-    "expiry": "2024-08-22T00:00:00Z",
-    "reason": "Acceso de prueba por 7 días"
+  "permanent": [
+    "126AB644-BF9A-4F45-A876-C6E56F1F9526",
+    "HWID_PERMANENTE_2",
+    "HWID_PERMANENTE_3"
+  ],
+  "temporary": {
+    "HWID_TEMPORAL_5": "2025-7-5",
+    "HWID_TEMPORAL_2": "2025-03-15",
+    "HWID_TEMPORAL_3": "2025-06-30"
   }
 }
