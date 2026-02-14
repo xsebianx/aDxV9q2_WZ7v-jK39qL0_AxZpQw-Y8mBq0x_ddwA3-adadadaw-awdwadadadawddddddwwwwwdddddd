@@ -1,10 +1,12 @@
 {
-  "permanent": [
-    "HWID_PERMANENTE_1",
-    "83F46147-5CA8-4A7E-8034-B5353693E90B"
-  ],
+  "permanent": ["HWID1", "HWID2"],
   "temporary": {
-    "HWID_TEMPORAL_1": "2025-07-05",
-    "HWID_TEMPORAL_2": "2025-03-15"
+    "HWID1": "2025-07-05"
+  },
+  "keys": {
+    "permanent": ["KEY1"],
+    "temporary": {
+      "KEY1": "2025-07-05"
+    }
   }
 }
