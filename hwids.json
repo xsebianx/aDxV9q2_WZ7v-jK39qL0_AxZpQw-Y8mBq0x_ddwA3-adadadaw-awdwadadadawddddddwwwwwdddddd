@@ -1,5 +1,5 @@
 {
-  "permanent": ["83F46147-5CA8-4A7E-8034-B5353693E90B", "HWID_2"],
+  "permanent": ["HWID_1", "HWID_2"],
   "temporary": {
     "HWID_TEMPORAL": "2026-07-05"
   },
