@@ -7,9 +7,7 @@
     "HWID_TEMPORAL": "2026-07-05"
   },
   "keys": {
-    "permanent": [
-      "DRAK-XXXX-XXXX-XXXX-XXXX"
-    ],
+    "permanent": [],
     "temporary": {
       "DRAK-YYYY-YYYY-YYYY-YYYY": "2026-05-14",
       "DRAK-2PRD-6NMZ-5DYU-M3EB": "2026-03-14",
