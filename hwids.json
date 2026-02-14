@@ -1,12 +1,12 @@
 {
-  "permanent": ["83F46147-5CA8-4A7E-8034-B5353693E90B", "HWID2"],
+  "permanent": ["83F46147-5CA8-4A7E-8034-B5353693E90B", "HWID_2"],
   "temporary": {
-    "HWID1": "2025-07-05"
+    "HWID_TEMPORAL": "2026-07-05"
   },
   "keys": {
-    "permanent": ["KEY1"],
+    "permanent": ["DRAK-XXXX-XXXX-XXXX-XXXX"],
     "temporary": {
-      "KEY1": "2025-07-05"
+      "DRAK-YYYY-YYYY-YYYY-YYYY": "2026-05-14"
     }
   }
 }
